@@ -4,7 +4,7 @@ let colorName = document.querySelector('.color-name');
 
 
 
-btn.addEventListener('click', () => {
+/*btn.addEventListener('click', () => {
         let randomNumber = randomRange(1, 10);
         //console.log(randomNumber);
         //console.log(colorName.innerText);
@@ -59,7 +59,77 @@ btn.addEventListener('click', () => {
             colorName.innerText = '';
             colorName.innerText += 'Violet';
         }
+    });*/
+
+
+    btn.addEventListener('click', () => {
+        let randomNumber = randomRange(1, 10);
+            //console.log(randomNumber);
+        switch (randomNumber) {
+            case 1:
+                bkcolor.removeAttribute('class');
+                bkcolor.classList.add('red');
+                colorName.innerText = '';
+                colorName.innerText += 'Red';
+                break;
+            case 2:
+                bkcolor.removeAttribute('class');
+                bkcolor.classList.add('blue');
+                colorName.innerText = '';
+                colorName.innerText += 'Blue';
+                break;
+            case 3:
+                bkcolor.removeAttribute('class');
+                bkcolor.classList.add('green');
+                colorName.innerText = '';
+                colorName.innerText += 'Green';
+                break;
+            case 4:
+                bkcolor.removeAttribute('class');
+                bkcolor.classList.add('yellow');
+                colorName.innerText = '';
+                colorName.innerText += 'Yellow';
+                break;
+            case 5:
+                bkcolor.removeAttribute('class');
+                bkcolor.classList.add('purple');
+                colorName.innerText = '';
+                colorName.innerText += 'Purple';
+                break;
+            case 6:
+                bkcolor.removeAttribute('class');
+                bkcolor.classList.add('aqua');
+                colorName.innerText = '';
+                colorName.innerText += 'Aqua';
+                break;
+            case 7:
+                bkcolor.removeAttribute('class');
+                bkcolor.classList.add('grey');
+                colorName.innerText = '';
+                colorName.innerText += 'Grey';
+                break;
+            case 8:
+                bkcolor.removeAttribute('class');
+                bkcolor.classList.add('brown');
+                colorName.innerText = '';
+                colorName.innerText += 'Brown';
+                break;
+            case 9:
+                bkcolor.removeAttribute('class');
+                bkcolor.classList.add('crimson');
+                colorName.innerText = '';
+                colorName.innerText += 'Crimson';
+                break;
+            case 10:
+                bkcolor.removeAttribute('class');
+                bkcolor.classList.add('violet');
+                colorName.innerText = '';
+                colorName.innerText += 'Violet';
+                break;
+        };
     });
+
+
 
     //Function for generating random number
     function randomRange(myMin, myMax) {
